@@ -16,8 +16,11 @@ namespace ComputeArea
 
         private bool? isSquare = null;
 
-        public Triangle() { }
+        public Triangle() { } // конструктор по умолчанию для возможностей сериализации (если понадобится)
 
+        /// <summary>
+        /// Создает треугольник с заданными сторонами
+        /// </summary>
         public Triangle(double A, double B, double C)
         {
             if (A < 0 || B < 0 || C < 0)
@@ -57,7 +60,7 @@ namespace ComputeArea
                 }
                 else
                 {
-                    isSquare= false;
+                    isSquare = false;
                 }
             }
 

@@ -12,6 +12,10 @@ namespace ComputeArea
 
         public Circle() { } // конструктор по умолчанию для возможностей сериализации (если понадобится)
 
+        /// <summary>
+        /// Создает круг заданного радиуса
+        /// </summary>
+
         public Circle(double Radius)
         {
             if (Radius < 0) // проверка на корректность ввода радиуса
