@@ -2,6 +2,6 @@
 {
     public abstract class AbstractFigure
     {
-        public abstract double Area();
+        public abstract double Area(params double[] dimensions);
     }
 }
