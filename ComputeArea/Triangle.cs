@@ -47,11 +47,18 @@ namespace ComputeArea
         {
             if (!isSquare.HasValue)
             {
+                //создадим массив со значениями сторон и сортируем его => последний элемент - гипотенуза
+                double[] arr = { a, b, c };
+                Array.Sort(arr);
 
-
-
-
-
+                if (arr[2] * arr[2] == ((arr[0] * arr[0]) + (arr[1] * arr[1])) ) // у прямоугольного треугольника сумма квадратов катетов должна быть равна квадрату гипотенузы
+                {
+                    isSquare = true;
+                }
+                else
+                {
+                    isSquare= false;
+                }
             }
 
             return isSquare.Value;
