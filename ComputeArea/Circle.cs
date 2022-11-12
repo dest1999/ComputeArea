@@ -10,7 +10,7 @@ namespace ComputeArea
     {
         public double radius { get; private set; }
 
-        public Circle() { }
+        public Circle() { } // конструктор по умолчанию для возможностей сериализации (если понадобится)
 
         public Circle(double Radius)
         {
@@ -23,7 +23,7 @@ namespace ComputeArea
 
         public override double Area()
         {
-            return radius * radius * 3.14;
+            return radius * radius * Math.PI;
         }
     }
 }
